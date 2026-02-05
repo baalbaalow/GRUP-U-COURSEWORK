@@ -19,7 +19,7 @@ public class GradeSummary {
 
             // Validate score
             if (score < 0 || score > 100) {
-                System.out.println("❌ Invalid score! Please enter a value between 0 and 100.\n");
+                System.out.println(" Invalid score! Please enter a value between 0 and 100.\n");
                 continue; // ask again without increasing student count
             }
 
@@ -57,7 +57,7 @@ public class GradeSummary {
 
             gradeCount[grade]++;
 
-            // ✅ Individual student result display
+            //  Individual student result display
             System.out.println("\n--- Student " + studentCount + " Result ---");
             System.out.println("Score  : " + score);
             System.out.println("Grade  : " + grade);
@@ -67,7 +67,7 @@ public class GradeSummary {
             studentCount++;
         }
 
-        // ✅ Summary
+        //  Summary
         System.out.println("\n===== FINAL GRADE SUMMARY =====");
         for (int i = 1; i <= 9; i++) {
             System.out.println("Grade " + i + " -> " + gradeCount[i] + " student(s)");
